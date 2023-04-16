@@ -96,7 +96,7 @@ def run():
     combine_image(content_image=content_image, style_image=style_image)
 
 if __name__ == "__main__":
-    print("Please notice that only accept .jpg file")
+    print("\nPlease notice that only accept .jpg file")
     content = input("Type in the content image:\n")
     style = input("Type in the style image\n")
 
