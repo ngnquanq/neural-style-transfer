@@ -71,6 +71,3 @@ def convert_mode(img):
         converted_img = Image.open(img.filename)
         return converted_img
 
-## check if images are successfully loaded
-#loader(r"C:\Users\84898\neural-style-transfer\Neural-Style-Transfer-pytorch\images\dancing.jpg", r"Neural-Style-Transfer-pytorch\images\vangogh.jpg", 128)
-loader(r"C:\Users\84898\neural-style-transfer\Neural-Style-Transfer-pytorch\images\dancing.jpg", r"Neural-Style-Transfer-pytorch\images\vangogh.jpg", 128)
