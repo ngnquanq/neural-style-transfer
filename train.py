@@ -14,13 +14,13 @@ nst = model.nst_model
 loader = utils.loader
 imshow = utils.imshow
 
-dir_path = os.path.dirname(os.path.realpath(__file__))
+dir_path = os.path.dirname(os.path.realpath(__file__)) + r'\images'
+
 def combine_image(content_image: str, style_image: str):
     #imshow = utils.imshow
-    #dir_path = os.path.dirname(os.path.realpath(__file__))
-    path_to_images = r"C:\Users\84898\NST\images"
-    content_image_path = path_to_images + fr'\{content_image}'
-    style_image_path = path_to_images + fr'\{style_image}'
+    path_to_images = dir_path
+    content_image_path = path_to_images + fr'\{content_image}.jpg'
+    style_image_path = path_to_images + fr'\{style_image}.jpg'
     parser = argparse.ArgumentParser()
     parser.add_argument('--content_img', type=str, default = fr'{content_image_path}')
     parser.add_argument('--style_img', type=str, default = fr'{style_image_path}')
