@@ -15,11 +15,10 @@ loader = utils.loader
 imshow = utils.imshow
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
-
 def combine_image(content_image: str, style_image: str):
     #imshow = utils.imshow
     #dir_path = os.path.dirname(os.path.realpath(__file__))
-    path_to_images = r"C:\Users\84898\neural-style-transfer\Neural-Style-Transfer-pytorch\images"
+    path_to_images = r"C:\Users\84898\NST\images"
     content_image_path = path_to_images + fr'\{content_image}'
     style_image_path = path_to_images + fr'\{style_image}'
     parser = argparse.ArgumentParser()
@@ -36,7 +35,7 @@ def combine_image(content_image: str, style_image: str):
 
     plt.figure()
     imshow(output, title = 'Output Image')
-    plt.pause(5)
+    plt.pause(3)
     plt.show()
 
 def main(args):
